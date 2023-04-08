@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class Divisor 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter your number");
+		int n = scn.nextInt();
+		if(n==0)
+		{
+			System.out.println("infinite divisor");
+		}
+		Divisor div = new Divisor();
+		int dc = div.countDivisor(n);
+		System.out.println("number of divisor = "+dc);
+	}
+	int countDivisor(int x)
+	{
+		int count=0;
+		for(int i=0;i<=x;i++)
+		{
+			if(x%i==0)
+				count++;
+		}
+		return count;
+	}
+}

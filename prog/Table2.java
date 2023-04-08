@@ -1,0 +1,22 @@
+// Method to display the multiplication table
+
+import java.util.Scanner;
+class Table2 
+{
+	public static void main(String[] args) 
+	{
+		
+		Table2 t = new Table2();
+		t.mulTable(7);
+	}
+	void mulTable(int x)
+	{
+		for(int i=1;i<=10;i++)
+		{
+			System.out.println(x+"*"+i+"="+x*i);
+		}
+		
+	}
+}
+ 
+ 

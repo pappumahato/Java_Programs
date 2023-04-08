@@ -1,0 +1,17 @@
+class Multiplication 
+{
+	public static void main(String[] args) 
+	{
+		dispTable(5);
+		dispTable(7);
+		dispTable(17);
+		dispTable(4);
+	}
+
+	static void dispTable(int n)
+	{
+		for(int i=1;i<=10;i++)
+			System.out.println(n+" x "+"i" = "+n*i);
+		System.out.println("====================");
+	}
+}
